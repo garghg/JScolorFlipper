@@ -1,0 +1,41 @@
+<!-- 
+Author: Haardik Garg
+Date: Sept 23, 2024
+JavaScript Color Flipper 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Color Flipper</title> <!-- Title shown the browser tab -->
+        <style>
+            /* Set the background color to chosen button */
+            #green {
+                background-color: green;
+            }
+            #red {
+                background-color: red;
+            }
+            #blue {
+                background-color: blue;
+            }
+            /* style all buttons */
+            button {
+                border-radius: 5px; /* Round the corners of the buttons */
+                width: 100px; /* Set the button width */
+                height: 40px; /* Set the button height */
+                margin: 5px; /* Space between buttons */
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Color Flipper</h3> <!-- Heading for the page -->
+        <!-- Buttons to set the background color to button clicked -->
+        <button id="green" onclick="setColor('green')">Green</button>
+        <button id="red" onclick="setColor('red')">Red</button>
+        <button id="blue" onclick="setColor('blue')">Blue</button>
+        <button onclick="randomColor()">Random</button>
+        <!-- Link to the JavaScript file containing the color-changing functions -->
+        <script src="index.js"></script>
+    </body>
+</html>
